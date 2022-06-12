@@ -1,0 +1,187 @@
+
+
+:root{
+    --dark:#141918;
+    --medium-color: #66acbf;
+    --light-color: #ddc7be;
+    --medium-transparent: #07b2e1ea;
+}
+
+@font-face {
+    font-family: lato;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--light-color);
+    font-family: lato;
+    text-align: center;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url(../images/tassjaoad.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+ 
+}
+
+.into-image__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.into-image__link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color:var(--medium-transparent);
+    padding:2rem;
+    color: var(--dark);
+    font-size: 3rem;
+    opacity: 0.5; 
+    transition: all 0.5 ease-in-out;
+  
+}
+
+.into-image__link a:hover,.quality-image-link a:hover, .origin-image-link:hover
+    {
+    transform: scale(1.2);
+}
+
+.intro-text h3 {
+  padding-top: 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.intro-text {
+    /*display: flex;*/
+    background-color: var(--dark);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0 15rem;
+    align-items: center;
+    /*justify-content: center;*/
+
+}
+
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url(../images/oad.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image-link a {
+    border: 2px solid --medium-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color:var(--medium-transparent);
+    padding:2rem;
+    color: var(--dark);
+    font-size: 3rem;
+    opacity: 0.5; 
+    transition: all 0.5 ease-in-out;
+
+}
+
+.quality-text {
+    display: flex;
+    background-color: var(--light-color);
+    color: var(--dark);
+    height: 250px;
+    padding: 0% 15rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quality-text-textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+.origin-image {
+    background-attachment: fixed;
+    background-image: url(../images/lapttop.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.origin-image-link a {
+    border: 2px solid --medium-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color:var(--medium-transparent);
+    padding:2rem;
+    color: var(--dark);
+    font-size: 3rem;
+    opacity: 0.5; 
+    transition: all 0.5 ease-in-out;
+}
+.orgin-text {
+    display: flex;
+    background-color: var(--dark);
+    color: var(--light-color);
+    height: 250px;
+    padding: 0% 15rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.origintext-textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    }
+
+.footer {
+    height: 250px;
+    background-color: var(--medium-color);
+    color: var(--dark);
+    font-size: 1,5rem;
+
+}
+.contact {
+    padding-top: 2rem;
+}
+.contact ul li {
+    display: inline-block;
+    margin: 1rem;
+
+}
+.contact ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: all 0.5 ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: var(--light-color);
+
+}
+.footer p {
+   margin-top: 3rem;
+}
